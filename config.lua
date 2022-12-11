@@ -105,6 +105,23 @@ Config.Products = {
             type = "item",
             slot = 12,
         },
+        [13] = {
+            name = "repairkit",
+            price = 500,
+            amount = 500,
+            info = {},
+            type = "item",
+            slot = 13,
+            --requiredJob = { "mechanic", "police" }
+        },
+        [14] = {
+            name = "phone",
+            price = 500,
+            amount = 500,
+            info = {},
+            type = "item",
+            slot = 14,
+        },
     },
     ["liquor"] = {
         [1] = {
@@ -164,7 +181,7 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 4,
-            requiredJob = { "mechanic", "police" }
+            requiredJob = { "mechanic", "lspd", "bcso", "sasp" }
         },
         [5] = {
             name = "screwdriverset",
@@ -255,6 +272,22 @@ Config.Products = {
             slot = 15,
             requiredJob = { "mechanic" }
         },
+        [16] = {
+            name = "spray",
+            price = 200,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 16,
+        },
+        [17] = {
+            name = "spray_remover",
+            price = 200,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 17,
+        },
     },
     ["weedshop"] = {
         [1] = {
@@ -296,6 +329,14 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 5,
+        },
+        [6] = {
+            name = "weed_white-widow_seed",
+            price = 5000,
+            amount = 1000,
+            info = {},
+            type = "item",
+            slot = 6,
         },
     },
     ["gearshop"] = {
@@ -374,30 +415,30 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 3,
-            requiredJob = { "mechanic", "police" }
+            requiredJob = { "mechanic", "lspd", "bcso", "sasp" }
         },
         [4] = {
             name = "weapon_pistol",
-            price = 2500,
-            amount = 5,
+            price = 5500,
+            amount = 500,
             info = {},
             type = "item",
             slot = 4,
-            requiresLicense = true
+            requiresLicense = false
         },
         [5] = {
             name = "weapon_snspistol",
-            price = 1500,
-            amount = 5,
+            price = 3500,
+            amount = 500,
             info = {},
             type = "item",
             slot = 5,
-            requiresLicense = true
+            requiresLicense = false
         },
         [6] = {
             name = "weapon_vintagepistol",
             price = 4000,
-            amount = 5,
+            amount = 500,
             info = {},
             type = "item",
             slot = 6,
@@ -405,12 +446,12 @@ Config.Products = {
         },
         [7] = {
             name = "pistol_ammo",
-            price = 250,
-            amount = 250,
+            price = 25,
+            amount = 1000,
             info = {},
             type = "item",
             slot = 7,
-            requiresLicense = true
+            requiresLicense = false
         },
     },
     ["casino"] = {
@@ -452,7 +493,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -467,7 +507,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -482,7 +521,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -497,7 +535,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -512,7 +549,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -527,7 +563,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -542,7 +577,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -557,7 +591,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -573,7 +606,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -588,7 +620,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -603,7 +634,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -618,7 +648,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -633,7 +662,6 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -649,7 +677,6 @@ Config.Locations = {
         ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -664,7 +691,6 @@ Config.Locations = {
         ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -679,7 +705,6 @@ Config.Locations = {
         ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -694,7 +719,6 @@ Config.Locations = {
         ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -709,7 +733,6 @@ Config.Locations = {
         ["products"] = Config.Products["liquor"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -725,7 +748,6 @@ Config.Locations = {
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
         ["blipsprite"] = 402,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 
@@ -740,7 +762,6 @@ Config.Locations = {
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
         ["blipsprite"] = 402,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 
@@ -755,7 +776,6 @@ Config.Locations = {
         ["products"] = Config.Products["hardware"],
         ["showblip"] = true,
         ["blipsprite"] = 402,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 
@@ -772,7 +792,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation2"] = {
@@ -787,7 +806,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation3"] = {
@@ -802,7 +820,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation4"] = {
@@ -817,7 +834,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation5"] = {
@@ -832,13 +848,12 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation6"] = {
         ["label"] = "Ammunation",
         ["type"] = "weapon",
-        ["coords"] = vector4(23.0, -1105.67, 29.8, 162.91),
+        ["coords"] = vector4(18.46, -1107.9, 29.8, 165.57),
         ["ped"] = 's_m_y_ammucity_01',
         ["scenario"] = "WORLD_HUMAN_COP_IDLES",
         ["radius"] = 1.5,
@@ -847,7 +862,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation7"] = {
@@ -862,7 +876,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation8"] = {
@@ -877,7 +890,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation9"] = {
@@ -892,7 +904,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation10"] = {
@@ -907,7 +918,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
     ["ammunation11"] = {
@@ -922,7 +932,6 @@ Config.Locations = {
         ["products"] = Config.Products["weapons"],
         ["showblip"] = true,
         ["blipsprite"] = 110,
-        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -938,7 +947,6 @@ Config.Locations = {
         ["products"] = Config.Products["casino"],
         ["showblip"] = true,
         ["blipsprite"] = 617,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 
@@ -953,7 +961,6 @@ Config.Locations = {
         ["products"] = Config.Products["liquor"],
         ["showblip"] = false,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 
@@ -969,7 +976,6 @@ Config.Locations = {
         ["products"] = Config.Products["weedshop"],
         ["showblip"] = true,
         ["blipsprite"] = 140,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 
@@ -985,7 +991,6 @@ Config.Locations = {
         ["products"] = Config.Products["gearshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 
@@ -1001,7 +1006,6 @@ Config.Locations = {
         ["products"] = Config.Products["leisureshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.8,
         ["blipcolor"] = 0
     },
 }
