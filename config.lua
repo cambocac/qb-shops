@@ -1,12 +1,11 @@
 Config = {}
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
-
+Config.FirearmsLicenseCheck = false -- Whether a arms dealer checks for a firearms license
 Config.SellCasinoChips = {
     coords = vector4(950.37, 34.72, 71.87, 33.82),
     radius = 1.5,
     ped = 's_m_y_casino_01'
 }
-
 Config.Products = {
     ["normal"] = {
         [1] = {
@@ -382,6 +381,14 @@ Config.Products = {
             type = "item",
             slot = 3,
         },
+        [4] = {
+            name = "diving_fill",
+            price = 500,
+            amount = 10,
+            info = {},
+            type = "item",
+            slot = 4,
+        },
         -- [4] = {
         --     name = "smoketrailred",
         --     price = 250,
@@ -465,7 +472,6 @@ Config.Products = {
         }
     },
 }
-
 Config.Locations = {
     -- 24/7 Locations
     ["247supermarket"] = {
@@ -479,6 +485,7 @@ Config.Locations = {
         ["products"] = Config.Products["normal"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
+        ["blipscale"] = 0.6,
         ["blipcolor"] = 0
     },
 
@@ -967,7 +974,7 @@ Config.Locations = {
     -- Weedshop Locations
     ["weedshop"] = {
         ["label"] = "Smoke On The Water",
-        ["coords"] = vector4(-1171.31, -1570.89, 4.66, 130.03),
+        ["coords"] = vector4(-1168.26, -1573.2, 4.66, 105.24),
         ["ped"] = 'a_m_y_hippy_01',
         ["scenario"] = "WORLD_HUMAN_AA_SMOKE",
         ["radius"] = 1.5,

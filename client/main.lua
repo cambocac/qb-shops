@@ -191,6 +191,7 @@ local function deletePeds()
             DeletePed(v)
         end
     end
+    pedSpawned = false
 end
 
 -- Threads
